@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.EntrenamientosFragment"
+    android:layout_marginBottom="10dp">
+
+    <EditText
+        android:importantForAutofill="auto"
+        android:id="@+id/filtroEntrenamientos"
+        android:layout_marginHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/escribe_deporte" />
+
+    <ProgressBar
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressEnt" />
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/cardview_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardEntrenamiento"
+        android:layout_margin="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/cancha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/c2" />
+
+                <TextView
+                    android:id="@+id/mensajeCarga2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="@string/cargando" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerEntrenamientos" />
+
+</LinearLayout>

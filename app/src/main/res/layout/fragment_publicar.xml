@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.PublicarFragment">
+
+    <ScrollView
+        android:id="@+id/scrollPublicar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/cardview_color"
+            android:layout_margin="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="1">
+                    <TableRow>
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="@string/tipo" />
+
+                        <Spinner
+                            android:layout_gravity="end"
+                            style="@style/Widget.MaterialComponents.PopupMenu"
+                            android:id="@+id/formTipo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+                    </TableRow>
+
+                    <TableRow android:layout_marginVertical="10dp">
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="@string/deporte" />
+
+                        <Spinner
+                            android:layout_gravity="end"
+                            style="@style/Widget.MaterialComponents.PopupMenu"
+                            android:id="@+id/formDeporte"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+                    </TableRow>
+                </TableLayout>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/descripcion" />
+                <EditText
+                    android:importantForAutofill="auto"
+                    android:id="@+id/formDescripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/descripcion_publicacion"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="@string/cancha" />
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/spinnerCanchas"
+                        app:hintText="Selecciona"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/resultadosCanchas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="@string/resultados" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recyclerSpinnerCanchas"/>
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    style="@style/botones"
+                    android:background="@drawable/boton"
+                    android:id="@+id/btnPublicar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_publicar"
+                    android:layout_marginBottom="15sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ilu_array">
+        <item>@string/automatica</item>
+        <item>@string/manual</item>
+        <item>@string/sin_ilu</item>
+    </string-array>
+</resources>

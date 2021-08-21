@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_publicaciones"
+            android:icon="@drawable/ic_touch"
+            android:title="@string/menu_publicaciones" />
+        <item
+            android:id="@+id/nav_publicar"
+            android:icon="@drawable/ic_plus_one_black_24dp"
+            android:title="@string/menu_publicar" />
+
+        <item
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/menu_notificaciones" />
+
+        <item android:title="@string/menu_entrenamientos">
+            <menu>
+                <item
+                    android:id="@+id/nav_entrenamientos"
+                    android:icon="@drawable/ic_buscar_ent"
+                    android:title="@string/menu_buscar" />
+                <item
+                    android:id="@+id/nav_entrenamiento"
+                    android:icon="@drawable/ic_anunciar"
+                    android:title="@string/menu_anunciar" />
+                <item
+                    android:icon="@drawable/ic_mirar"
+                    android:title="@string/menu_misanuncios" />
+            </menu>
+        </item>
+
+        <item android:title="@string/menu_canchas">
+            <menu>
+                <item
+                    android:icon="@drawable/ic_buscar"
+                    android:title="@string/menu_buscar" />
+                <item
+                    android:icon="@drawable/ic_agregar_cancha"
+                    android:title="@string/menu_agregar" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_salir"
+            android:title="@string/menu_cerrarsesion" />
+
+    </group>
+
+</menu>

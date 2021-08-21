@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "868776660827",
+    "firebase_url": "https://sportkeep-90fd6.firebaseio.com",
+    "project_id": "sportkeep-90fd6",
+    "storage_bucket": "sportkeep-90fd6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868776660827:android:83aaec2857c178b0f6947e",
+        "android_client_info": {
+          "package_name": "com.deportes.sp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868776660827-vuff95vp1h64vvadibpg5ied34ogf9ag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deportes.sp1",
+            "certificate_hash": "caf66499e012d6b59deac705cbf23bf33b397cec"
+          }
+        },
+        {
+          "client_id": "868776660827-qv84f4a37n1lb5mvs01umvbuo405mp6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqW-wB_zaO2fU820nO8oig-z0gpvtj9iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868776660827-qv84f4a37n1lb5mvs01umvbuo405mp6a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

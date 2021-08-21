@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_publicaciones">
+
+    <fragment
+        android:id="@+id/nav_publicaciones"
+        android:name="com.deportes.sp1.fragments.PublicacionesFragment"
+        android:label="@string/menu_publicaciones"
+        tools:layout="@layout/fragment_publicaciones" />
+
+    <fragment
+        android:id="@+id/nav_publicar"
+        android:name="com.deportes.sp1.fragments.PublicarFragment"
+        android:label="@string/menu_publicar"
+        tools:layout="@layout/fragment_publicar" />
+
+    <activity
+        android:id="@+id/nav_notificaciones"
+        android:label="@string/menu_notificaciones"
+        />
+
+    <fragment
+        android:id="@+id/nav_entrenamientos"
+        android:name="com.deportes.sp1.fragments.EntrenamientosFragment"
+        android:label="@string/menu_entrenamientos"
+        tools:layout="@layout/fragment_entrenamientos" />
+
+    <fragment
+        android:id="@+id/nav_entrenamiento"
+        android:name="com.deportes.sp1.fragments.EntrenamientoFragment"
+        android:label="@string/menu_entrenamiento"
+        tools:layout="@layout/fragment_entrenamiento" />
+
+    <fragment
+        android:id="@+id/nav_canchas"
+        android:label="@string/menu_canchas" />
+
+    <fragment
+        android:id="@+id/nav_anuncios"
+        android:label="@string/menu_anuncios" />
+
+    <fragment
+        android:id="@+id/nav_agregar"
+        android:label="@string/menu_agregar" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.deportes.sp1.fragments.LogoutFragment"
+        android:label="@string/menu_cerrarsesion"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

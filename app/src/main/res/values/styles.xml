@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="Theme.Sportkeep" parent="Theme.AppCompat.Light" >
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="colorPrimary">@color/color_blue</item>>
+    </style>
+
+    <style name="login" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+
+    <style name="botones">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+
+</resources>

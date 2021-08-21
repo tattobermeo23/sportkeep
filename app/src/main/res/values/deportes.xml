@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="combo_deportes">
+        <item>@string/microfutbol</item>
+        <item>@string/futbol</item>
+        <item>@string/baloncesto</item>
+        <item>@string/voleivol</item>
+        <item>@string/futbol_mini</item>
+        <item>@string/patinaje</item>
+        <item>@string/futsal</item>
+        <item>@string/tenis</item>
+    </string-array>
+</resources>
